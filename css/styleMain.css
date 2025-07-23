@@ -1,0 +1,343 @@
+:root {
+    --mainColor: darkgray;
+    --lightPink: rgb(255 193 218);/* rgb(242 101 158 / 25%);*/
+    --pink: rgb(255 167 202);
+    --colorLetter: #2f2f2f;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    background-color: var(--mainColor);
+    margin-inline: 5%;
+    margin-top: 0px;
+}
+
+/* Css da barra de navegação*/
+.navbar {
+    position: sticky;
+    top: 0;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: var(--lightPink);
+}
+
+.cabecalho * {
+    text-decoration: none;
+    color: var(--colorLetter);
+}
+
+.itemCabecalho {
+    padding: 5px;
+    margin: 5px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.itemCabecalho * {
+    padding: 5px;
+}
+
+.dropDownMenu {
+    right: -40px;
+    padding: 0;
+}
+
+#buttonSuaConta {
+    background-color: inherit;
+    color: inherit;
+    border: 0;
+}
+
+.buttonMenu {
+    background-color: inherit;
+    border: 0;
+    cursor: pointer;
+}
+
+#titleLogo {
+    font-size: medium;
+    margin: 0;
+}
+
+#imageLogo {
+    width: auto;
+    height: 30px;
+    border-radius: 15px;
+}
+
+span#login:hover {
+    cursor: pointer;
+}
+
+#about {
+    color: var(--colorLetter);
+}
+
+
+/* Css de formulario*/
+.formTab {
+    display: block;
+    margin: 40px auto;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#loginTab {
+    display: block;
+    width: 300px;
+}
+
+.formTab header {
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+
+.formTitle {
+    text-align: center;
+    font-size: large;
+    margin: 10px 5px 20px 5px;
+    padding: 3px;
+}
+
+.closetab {
+    position: absolute;
+    margin: 5px;
+    padding: 5px;
+    right: 0;
+    cursor: pointer;
+}
+
+
+.groupFormLogin {
+    padding: 5px;
+}
+
+.groupFormLogin form {
+    margin-inline: 15px;
+}
+
+.groupFormLogin form > * {
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+
+form .titleQuestion {
+    margin: 20px 0;
+}
+
+.inputText {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.buttonForm {
+    background-color: var(--lightPink);
+    border-radius: 5px;
+    border: 1px ridge white;
+    box-sizing: border-box;
+    color: var(--colorLetter);
+    padding: 5px;
+}
+
+.randomLink {
+    text-decoration: none;
+}
+
+.randomLink:hover {
+    text-decoration: underline;
+}
+
+
+#formTabRecomendados {
+    display: block;
+    position: relative;
+    width: 450px;
+    height: 470px;
+    overflow: auto;
+}
+
+.containerCheckbox {
+    display: block;
+    position: relative;
+    padding: 1px 0px 4px 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: medium;
+
+}
+
+.containerCheckbox:hover input ~ .checkmark {
+    background-color: #ccc;    
+}
+
+.containerCheckbox input:checked ~ .checkmark {
+  background-color: var(--pink);
+}
+
+
+.checkmark {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 7px;
+    background-color: #eee;
+}
+
+.hideCheckbox {
+    visibility: hidden;
+}
+
+
+
+/* Css dos containers de livro */
+#main {
+    width: 80%;
+    box-shadow: none;
+}
+
+.container {
+    padding: 30px;
+}
+
+.containerLivros {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleGenero {
+    font-weight: normal;
+    font-size: large;
+    margin: 20px 0 0 0;
+    padding: 5px 0px;
+    width: 100%;
+}
+
+.livros {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-evenly;                                                           
+    width: auto;
+    height: 300px;
+    border: solid 1px #a3a3a3;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 2px;
+    overflow-x: auto;
+}
+
+.buttonsUpdate {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px;
+}
+
+.buttonsUpdate  * {
+    width: 99%;
+    cursor: pointer;
+}
+
+.buttonUpdateRec {
+    background-color: var(--lightPink);
+    color: var(--colorLetter);
+    border: 0;
+    padding: 5px;
+}
+
+#novosRecomendados {
+    display: none;
+    margin-right: 1%;
+}
+
+#apagarRecomendados {
+    display: none;
+    margin-left: 1%;
+}
+
+#changePage {
+    text-decoration: none;
+    margin: auto;
+}
+
+#recomendados {
+    height: 150px;
+}
+
+.livro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 140px;
+    height: auto;
+    padding: 2px;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.fotoCapa {
+    width: 100%;
+    height: 55%;
+    background-color: var(--pink);
+}
+
+.imageCapaLivro {
+    width: 100%;
+    height: 100%;
+}
+
+.textLivro {
+    margin-inline: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 2px;
+}
+
+.titleLivro {
+    margin-bottom: 15px;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-size: large;
+    font-weight: normal;
+}
+
+.descricaoLivro {
+    margin: 1px;
+    padding: 1px;
+    width: 140px;
+    font-size: medium;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+#buttonRecomendados {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
