@@ -39,7 +39,7 @@
             if ($sql->num_rows > 0) {
                 $_SESSION['username'] = $username;
                 $_SESSION['password'] = $password;
-                $url = 'index.php';
+                $url = 'home.php';
                 header("location:".$url);
             } else {
                 echo "<script>

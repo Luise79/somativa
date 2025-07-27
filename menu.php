@@ -14,7 +14,7 @@
     <?php session_start();?>
     <div class="navbar">
         <div class="cabecalho">
-            <a href="index.php" target="_self">
+            <a href="home.php" target="_self">
                 <div class="itemCabecalho">
                     <img src="images/logoLivro.jpg" id="imageLogo" class="itemLogo">
                     <p id="titleLogo" class="itemLogo">WebBooks</p>

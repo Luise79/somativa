@@ -81,8 +81,8 @@
                 $_SESSION['username'] = $username;
                 $_SESSION['password'] = $password;
                 // Redireciona para pagina principal
-                $url = 'index.php';
-                echo "<script>location.href='index.php';</script>";
+                $url = 'home.php';
+                echo "<script>location.href='home.php';</script>";
             }
         }
     ?>

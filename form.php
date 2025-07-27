@@ -81,7 +81,7 @@
         if (isset($_POST['apagarRecomendados'])) {
             deleteRecomendados($conn, $idUsuario);
             $conn->close();
-            echo "<script>location.href='index.php';</script>";
+            echo "<script>location.href='home.php';</script>";
         }
 
         // Inserir o genero escolhido pelo usuario no bd
@@ -100,7 +100,7 @@
         // Voltar pra pagina inicial quando os livros forem selecinados/inseridos no bd 
         if ($insertedBooks) {
             $conn->close();
-            echo "<script>location.href='index.php';</script>";
+            echo "<script>location.href='home.php';</script>";
         }
 
         

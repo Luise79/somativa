@@ -8,7 +8,7 @@ if (perfEntries[0].type === "back_forward") {
 
 for (let x of document.querySelectorAll(".closetab")) {
     x.addEventListener("click", () => {
-        location.replace("index.php");
+        location.replace("home.php");
     });
 }
 
