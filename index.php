@@ -10,6 +10,7 @@
     <?php require 'menu.php';
     require 'index.html'?>
     <?php
+        // testing connection
         if (!isset($_SESSION['username'])) {
             header('Location: login.php');
         }
